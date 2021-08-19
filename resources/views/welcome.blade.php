@@ -175,7 +175,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="POST" action="{{ secure_url(route('submit.contact-form')) }}">
+                    <form method="POST" action="{{ route('submit.contact-form') }}">
                         @csrf
                         <div class="col-md-6 form-line">
                               <div class="form-group">
@@ -184,7 +184,7 @@
                               </div>
                               <div class="form-group">
                                 <label for="exampleInputEmail">Email Address</label>
-                                <input type="email" name="email" required="required" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+                                <input type="email" name="email" required="required" class="form-control" id="exampleInputEmail" placeholder=" Enter Email address">
                               </div>	
                           </div>
                           <div class="col-md-6">
@@ -193,8 +193,7 @@
                                     <textarea name="message"  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
                                 </div>
                                 <div>
-
-                                    <input type="submit" class="btn btn-primary" value=" Send Message" />
+                                    <input type="submit" class="btn btn-primary mt-2" value=" Send Message" />
                                 </div>
                         </div>
                     </form>
