@@ -194,7 +194,7 @@
                                 </div>
                                 <div>
 
-                                    <input type="submit" class="btn btn-default submit" value=" Send Message" />
+                                    <input type="submit" class="btn btn-primary" value=" Send Message" />
                                 </div>
                         </div>
                     </form>
