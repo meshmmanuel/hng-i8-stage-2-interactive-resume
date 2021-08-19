@@ -168,27 +168,34 @@
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contact</h2>
-                    <form>
+                    @if (\Session::has('success'))
+                        <div class="alert alert-success">
+                            <ul>
+                                <li>{!! \Session::get('success') !!}</li>
+                            </ul>
+                        </div>
+                    @endif
+                    <form method="POST" action="{{ route('submit.contact-form') }}">
+                        @csrf
                         <div class="col-md-6 form-line">
                               <div class="form-group">
                                   <label for="exampleInputUsername">Your name</label>
-                                <input type="text" class="form-control" id="" placeholder=" Enter Name">
+                                <input type="text" name="name" required="required" class="form-control" id="" placeholder=" Enter Name">
                               </div>
                               <div class="form-group">
                                 <label for="exampleInputEmail">Email Address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+                                <input type="email" name="email" required="required" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
                               </div>	
                           </div>
                           <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for ="description"> Message</label>
-                                   <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-                              </div>
-                              <div>
-    
-                                  <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-                              </div>
-                              
+                                <div class="form-group">
+                                    <label for ="description"> Message</label>
+                                    <textarea name="message"  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                                </div>
+                                <div>
+
+                                    <input type="submit" class="btn btn-default submit" value=" Send Message" />
+                                </div>
                         </div>
                     </form>
                 </div>
