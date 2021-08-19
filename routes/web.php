@@ -18,6 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(array('https'), function(){
-    Route::post('/contact-form', [ContactFormController::class, 'submitForm'])->name('submit.contact-form');
-});
+Route::post('/contact-form', [ContactFormController::class, 'submitForm'])->name('submit.contact-form');
