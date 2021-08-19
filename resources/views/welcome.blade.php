@@ -175,7 +175,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="POST" action="{{ route('submit.contact-form') }}">
+                    <form method="POST" action="{{ secure_url(route('submit.contact-form')) }}">
                         @csrf
                         <div class="col-md-6 form-line">
                               <div class="form-group">
