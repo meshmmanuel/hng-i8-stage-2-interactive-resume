@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <a target="_blank" href="https://ingressive.org/" class="mb-2">
+            <!-- <a target="_blank" href="https://ingressive.org/" class="mb-2">
                 <img width="120" src="{{ secure_asset('assets/img/i4g2.png')}}" />
             </a>
             <a target="_blank" href="https://hng.tech/" class="mb-2">
@@ -40,7 +40,7 @@
             </a>
             <a target="_blank" href="https://internship.zuri.team/" class="mb-2">
                 <img width="120" src="{{ secure_asset('assets/img/zuri.png')}}" />
-            </a>
+            </a> -->
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
@@ -67,6 +67,14 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Backend Developer Intern</h3>
+                            <div class="subheading mb-3">Zuri Chat</div>
+                            <p>I worked as a QA Tester, worked on a Todo Plugin, Setup Centrifugo RTC to cummunicate with the main application</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - October 2021</span></div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Fullstack Software Developer</h3>
@@ -103,7 +111,7 @@
                             <h3 class="mb-0">HNG-i8 Internship</h3>
                             <div class="subheading mb-3">Backend Development with PHP</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Ongoing</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2021 - October 2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -165,7 +173,7 @@
             </section>
             <hr class="m-0" />
             <!-- Contact-->
-            <section class="resume-section" id="contact">
+            <!-- <section class="resume-section" id="contact">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contact</h2>
                     @if (\Session::has('success'))
@@ -198,7 +206,7 @@
                         </div>
                     </form>
                 </div>
-            </section>
+            </section> -->
             <hr class="m-0" />
         </div>
         <!-- Bootstrap core JS-->
